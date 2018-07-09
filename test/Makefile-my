@@ -1,0 +1,8 @@
+INC = -I/../src
+CFLAGS= $(INCS) ../src/libzlog.a -lpthread
+app:test_default.o
+	gcc -o app test_default.o $(CFLAGS)
+test.o:test_default.c
+	gcc $(incs) -c -o $@ $<
+clean:
+	rm test_default.o app

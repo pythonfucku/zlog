@@ -1,0 +1,606 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARRAY_LIST_DEFAULT_SIZE	zc_arraylist.h	12;"	d
+BINS	makefile	/^BINS=zlog-chk-conf$/;"	m
+CC	makefile	/^CC:=$(shell sh -c 'type $(CC) >\/dev\/null 2>\/dev\/null && echo $(CC) || echo gcc')$/;"	m
+COLOR_ALERT	event.c	26;"	d	file:
+COLOR_CRIT	event.c	27;"	d	file:
+COLOR_DEBUG	event.c	32;"	d	file:
+COLOR_ERROR	event.c	28;"	d	file:
+COLOR_FATAL	event.c	25;"	d	file:
+COLOR_INFO	event.c	31;"	d	file:
+COLOR_NOTICE	event.c	30;"	d	file:
+COLOR_TRACE	event.c	33;"	d	file:
+COLOR_WARN	event.c	29;"	d	file:
+DEBUG	makefile	/^DEBUG?= -g -ggdb$/;"	m
+DYLIBNAME	makefile	/^DYLIBNAME=$(LIBNAME).$(DYLIBSUFFIX)$/;"	m
+DYLIBSUFFIX	makefile	/^  DYLIBSUFFIX=dylib$/;"	m
+DYLIBSUFFIX	makefile	/^DYLIBSUFFIX=so$/;"	m
+DYLIB_MAJOR_NAME	makefile	/^  DYLIB_MAJOR_NAME=$(LIBNAME).$(HIREDIS_MAJOR).$(DYLIBSUFFIX)$/;"	m
+DYLIB_MAJOR_NAME	makefile	/^DYLIB_MAJOR_NAME=$(LIBNAME).$(DYLIBSUFFIX).$(ZLOG_MAJOR)$/;"	m
+DYLIB_MAKE_CMD	makefile	/^  DYLIB_MAKE_CMD=$(CC) -G -o $(DYLIBNAME) -h $(DYLIB_MINOR_NAME) $(LDFLAGS)$/;"	m
+DYLIB_MAKE_CMD	makefile	/^  DYLIB_MAKE_CMD=$(CC) -shared -Wl,-G,-b64 -maix64 -pthread -o $(DYLIBNAME) $(LDFLAGS)$/;"	m
+DYLIB_MAKE_CMD	makefile	/^  DYLIB_MAKE_CMD=$(CC) -shared -Wl,-install_name,$(DYLIB_MINOR_NAME) -o $(DYLIBNAME) $(LDFLAGS)$/;"	m
+DYLIB_MAKE_CMD	makefile	/^DYLIB_MAKE_CMD=$(CC) -shared -Wl,-soname,$(DYLIB_MINOR_NAME) -o $(DYLIBNAME) $(LDFLAGS)$/;"	m
+DYLIB_MINOR_NAME	makefile	/^  DYLIB_MINOR_NAME=$(LIBNAME).$(HIREDIS_MAJOR).$(HIREDIS_MINOR).$(DYLIBSUFFIX)$/;"	m
+DYLIB_MINOR_NAME	makefile	/^DYLIB_MINOR_NAME=$(LIBNAME).$(DYLIBSUFFIX).$(ZLOG_MAJOR).$(ZLOG_MINOR)$/;"	m
+EMPTY	zc_profile.h	14;"	d
+ESC_END	event.c	24;"	d	file:
+ESC_START	event.c	23;"	d	file:
+FILE_NEWLINE	zc_xplatform.h	27;"	d
+FILE_NEWLINE_LEN	zc_xplatform.h	28;"	d
+INCLUDE_PATH	makefile	/^INCLUDE_PATH?=include$/;"	m
+INSTALL	makefile	/^  INSTALL= cp -r$/;"	m
+INSTALL	makefile	/^  INSTALL?= cp -r$/;"	m
+INSTALL	makefile	/^INSTALL?= cp -a$/;"	m
+INSTALL_INCLUDE_PATH	makefile	/^INSTALL_INCLUDE_PATH= $(PREFIX)\/$(INCLUDE_PATH)$/;"	m
+INSTALL_LIBRARY_PATH	makefile	/^INSTALL_LIBRARY_PATH= $(PREFIX)\/$(LIBRARY_PATH)$/;"	m
+LIBNAME	makefile	/^LIBNAME=libzlog$/;"	m
+LIBRARY_PATH	makefile	/^LIBRARY_PATH?=lib$/;"	m
+MAXLEN_CFG_LINE	zc_xplatform.h	25;"	d
+MAXLEN_PATH	zc_xplatform.h	24;"	d
+OBJ	makefile	/^OBJ=    \\$/;"	m
+OPTIMIZATION	makefile	/^OPTIMIZATION?=-O2$/;"	m
+PREFIX	makefile	/^PREFIX?=\/usr\/local$/;"	m
+REAL_CFLAGS	makefile	/^REAL_CFLAGS=$(OPTIMIZATION) -fPIC -pthread $(CFLAGS) $(WARNINGS) $(DEBUG)$/;"	m
+REAL_LDFLAGS	makefile	/^REAL_LDFLAGS=$(LDFLAGS) -pthread$/;"	m
+ROLLING	rotater.c	24;"	d	file:
+SEQUENCE	rotater.c	25;"	d	file:
+STLIBNAME	makefile	/^STLIBNAME=$(LIBNAME).$(STLIBSUFFIX)$/;"	m
+STLIBSUFFIX	makefile	/^STLIBSUFFIX=a$/;"	m
+STLIB_MAKE_CMD	makefile	/^  STLIB_MAKE_CMD=OBJECT_MODE=64 ar rcs $(STLIBNAME) $(DYLIB_MAJOR_NAME)$/;"	m
+STLIB_MAKE_CMD	makefile	/^STLIB_MAKE_CMD=ar rcs $(STLIBNAME)$/;"	m
+STRCMP	zc_xplatform.h	33;"	d
+STRICMP	zc_xplatform.h	35;"	d
+STRNCMP	zc_xplatform.h	34;"	d
+STRNICMP	zc_xplatform.h	36;"	d
+WARNINGS	makefile	/^WARNINGS=-Wall -Werror -Wstrict-prototypes -fwrapv$/;"	m
+ZC_DEBUG	zc_profile.h	/^	ZC_DEBUG = 0,$/;"	e	enum:zc_profile_flag
+ZC_ERROR	zc_profile.h	/^	ZC_ERROR = 2$/;"	e	enum:zc_profile_flag
+ZC_WARN	zc_profile.h	/^	ZC_WARN = 1,$/;"	e	enum:zc_profile_flag
+ZLOG_CHECK_PRINTF	zlog.h	20;"	d
+ZLOG_CHECK_PRINTF	zlog.h	22;"	d
+ZLOG_CONF_BACKUP_ROTATE_LOCK_FILE	conf.c	35;"	d	file:
+ZLOG_CONF_DEFAULT_BUF_SIZE_MAX	conf.c	31;"	d	file:
+ZLOG_CONF_DEFAULT_BUF_SIZE_MIN	conf.c	30;"	d	file:
+ZLOG_CONF_DEFAULT_FILE_PERMS	conf.c	32;"	d	file:
+ZLOG_CONF_DEFAULT_FORMAT	conf.c	28;"	d	file:
+ZLOG_CONF_DEFAULT_FSYNC_PERIOD	conf.c	34;"	d	file:
+ZLOG_CONF_DEFAULT_RELOAD_CONF_PERIOD	conf.c	33;"	d	file:
+ZLOG_CONF_DEFAULT_RULE	conf.c	29;"	d	file:
+ZLOG_DEFAULT_TIME_FMT	spec.c	27;"	d	file:
+ZLOG_FMT	event.h	/^	ZLOG_FMT = 0,$/;"	e	enum:__anon2
+ZLOG_HEX	event.h	/^	ZLOG_HEX = 1,$/;"	e	enum:__anon2
+ZLOG_HEX_HEAD	spec.c	28;"	d	file:
+ZLOG_INT32_LEN	zc_xplatform.h	13;"	d
+ZLOG_INT64_LEN	zc_xplatform.h	14;"	d
+ZLOG_LEVEL_DEBUG	zlog.h	/^	ZLOG_LEVEL_DEBUG = 20,$/;"	e	enum:__anon6
+ZLOG_LEVEL_ERROR	zlog.h	/^	ZLOG_LEVEL_ERROR = 100,$/;"	e	enum:__anon6
+ZLOG_LEVEL_FATAL	zlog.h	/^	ZLOG_LEVEL_FATAL = 120$/;"	e	enum:__anon6
+ZLOG_LEVEL_INFO	zlog.h	/^	ZLOG_LEVEL_INFO = 40,$/;"	e	enum:__anon6
+ZLOG_LEVEL_NOTICE	zlog.h	/^	ZLOG_LEVEL_NOTICE = 60,$/;"	e	enum:__anon6
+ZLOG_LEVEL_WARN	zlog.h	/^	ZLOG_LEVEL_WARN = 80,$/;"	e	enum:__anon6
+ZLOG_MAJOR	makefile	/^ZLOG_MAJOR=1$/;"	m
+ZLOG_MAX_INT32_VALUE	zc_xplatform.h	22;"	d
+ZLOG_MAX_UINT32_VALUE	zc_xplatform.h	17;"	d
+ZLOG_MAX_UINT32_VALUE	zc_xplatform.h	19;"	d
+ZLOG_MINOR	makefile	/^ZLOG_MINOR=1$/;"	m
+ZLOG_VERSION	version.h	1;"	d
+_BSD_SOURCE	fmacros.h	4;"	d
+_FILE_OFFSET_BITS	fmacros.h	18;"	d
+_LARGEFILE_SOURCE	fmacros.h	17;"	d
+_XOPEN_SOURCE	fmacros.h	14;"	d
+_XOPEN_SOURCE	fmacros.h	8;"	d
+_XOPEN_SOURCE_EXTENDED	fmacros.h	11;"	d
+__func__	zlog.h	95;"	d
+__func__	zlog.h	97;"	d
+__zc_arraylist_h	zc_arraylist.h	10;"	d
+__zc_defs_h	zc_defs.h	10;"	d
+__zc_hashtalbe_h	zc_hashtable.h	10;"	d
+__zc_profile_h	zc_profile.h	10;"	d
+__zc_util_h	zc_util.h	9;"	d
+__zc_xplatform_h	zc_xplatform.h	9;"	d
+__zlog_buf_h	buf.h	10;"	d
+__zlog_category_h	category.h	10;"	d
+__zlog_category_table_h	category_table.h	10;"	d
+__zlog_conf_h	conf.h	10;"	d
+__zlog_event_h	event.h	10;"	d
+__zlog_fmacro_h	fmacros.h	2;"	d
+__zlog_format_h	format.h	10;"	d
+__zlog_h	zlog.h	10;"	d
+__zlog_level_h	level.h	10;"	d
+__zlog_level_list_h	level_list.h	10;"	d
+__zlog_mdc_h	mdc.h	10;"	d
+__zlog_record_h	record.h	10;"	d
+__zlog_record_table_h	record_table.h	10;"	d
+__zlog_rotater_h	rotater.h	10;"	d
+__zlog_rule_h	rule.h	15;"	d
+__zlog_spec_h	spec.h	10;"	d
+__zlog_thread_h	thread.h	10;"	d
+archive_max_count	rule.h	/^	int archive_max_count;$/;"	m	struct:zlog_rule_s
+archive_max_size	rule.h	/^	long archive_max_size;$/;"	m	struct:zlog_rule_s
+archive_path	rotater.h	/^	char *archive_path;			\/* aa.#5i.log *\/$/;"	m	struct:zlog_rotater_s
+archive_path	rule.h	/^	char archive_path[MAXLEN_PATH + 1];$/;"	m	struct:zlog_rule_s
+archive_path_buf	thread.h	/^	zlog_buf_t *archive_path_buf;$/;"	m	struct:__anon1
+archive_specs	rule.h	/^	zc_arraylist_t *archive_specs;$/;"	m	struct:zlog_rule_s
+array	zc_arraylist.h	/^	void **array;$/;"	m	struct:__anon4
+base_path	rotater.h	/^	char *base_path;			\/* aa.log *\/$/;"	m	struct:zlog_rotater_s
+buf	record.h	/^	char *buf;$/;"	m	struct:zlog_msg_s
+buf	zlog.h	/^	char *buf;$/;"	m	struct:zlog_msg_s
+buf_size_max	conf.h	/^	size_t buf_size_max;$/;"	m	struct:zlog_conf_s
+buf_size_min	conf.h	/^	size_t buf_size_min;$/;"	m	struct:zlog_conf_s
+category	rule.h	/^	char category[MAXLEN_CFG_LINE + 1];$/;"	m	struct:zlog_rule_s
+category_name	event.h	/^	char *category_name;$/;"	m	struct:__anon3
+category_name_len	event.h	/^	size_t category_name_len;$/;"	m	struct:__anon3
+compare_char	rule.h	/^	char compare_char;$/;"	m	struct:zlog_rule_s
+default_format	conf.h	/^	zlog_format_t *default_format;$/;"	m	struct:zlog_conf_s
+default_format_line	conf.h	/^	char default_format_line[MAXLEN_CFG_LINE + 1];$/;"	m	struct:zlog_conf_s
+del	zc_arraylist.h	/^	zc_arraylist_del_fn del;$/;"	m	struct:__anon4
+dynamic_specs	rule.h	/^	zc_arraylist_t *dynamic_specs;$/;"	m	struct:zlog_rule_s
+dzlog	zlog.c	/^void dzlog(const char *file, size_t filelen, const char *func, size_t funclen, long line, int level,$/;"	f
+dzlog_debug	zlog.h	137;"	d
+dzlog_debug	zlog.h	176;"	d
+dzlog_error	zlog.h	125;"	d
+dzlog_error	zlog.h	164;"	d
+dzlog_fatal	zlog.h	122;"	d
+dzlog_fatal	zlog.h	161;"	d
+dzlog_info	zlog.h	134;"	d
+dzlog_info	zlog.h	173;"	d
+dzlog_init	zlog.c	/^int dzlog_init(const char *confpath, const char *cname)$/;"	f
+dzlog_notice	zlog.h	131;"	d
+dzlog_notice	zlog.h	170;"	d
+dzlog_set_category	zlog.c	/^int dzlog_set_category(const char *cname)$/;"	f
+dzlog_warn	zlog.h	128;"	d
+dzlog_warn	zlog.h	167;"	d
+end	buf.h	/^	char *end;$/;"	m	struct:zlog_buf_s
+end_plus_1	buf.h	/^	char *end_plus_1;$/;"	m	struct:zlog_buf_s
+equal	zc_hashtable.c	/^	zc_hashtable_equal_fn equal;$/;"	m	struct:zc_hashtable_s	file:
+event	thread.h	/^	zlog_event_t *event;$/;"	m	struct:__anon1
+file	conf.h	/^	char file[MAXLEN_PATH + 1];$/;"	m	struct:zlog_conf_s
+file	event.h	/^	const char *file;$/;"	m	struct:__anon3
+file_len	event.h	/^	size_t file_len;$/;"	m	struct:__anon3
+file_open_flags	rule.h	/^	int file_open_flags;$/;"	m	struct:zlog_rule_s
+file_path	rule.h	/^	char file_path[MAXLEN_PATH + 1];$/;"	m	struct:zlog_rule_s
+file_perms	conf.h	/^	unsigned int file_perms;$/;"	m	struct:zlog_conf_s
+file_perms	rule.h	/^	unsigned int file_perms;$/;"	m	struct:zlog_rule_s
+files	rotater.h	/^	zc_arraylist_t *files;$/;"	m	struct:zlog_rotater_s
+fit_rules	category.h	/^	zc_arraylist_t *fit_rules;$/;"	m	struct:zlog_category_s
+fit_rules_backup	category.h	/^	zc_arraylist_t *fit_rules_backup;$/;"	m	struct:zlog_category_s
+format	rule.h	/^	zlog_format_t *format;$/;"	m	struct:zlog_rule_s
+formats	conf.h	/^	zc_arraylist_t *formats;$/;"	m	struct:zlog_conf_s
+fsync_count	rule.h	/^	size_t fsync_count;$/;"	m	struct:zlog_rule_s
+fsync_period	conf.h	/^	size_t fsync_period;$/;"	m	struct:zlog_conf_s
+fsync_period	rule.h	/^	size_t fsync_period;$/;"	m	struct:zlog_rule_s
+func	event.h	/^	const char *func;$/;"	m	struct:__anon3
+func_len	event.h	/^	size_t func_len;$/;"	m	struct:__anon3
+gen_archive_path	spec.h	/^	zlog_spec_gen_fn gen_archive_path;$/;"	m	struct:zlog_spec_s
+gen_msg	spec.h	/^	zlog_spec_gen_fn gen_msg;$/;"	m	struct:zlog_spec_s
+gen_path	spec.h	/^	zlog_spec_gen_fn gen_path;$/;"	m	struct:zlog_spec_s
+generate_cmd	event.h	/^	zlog_event_cmd generate_cmd;$/;"	m	struct:__anon3
+glob_path	rotater.h	/^	char glob_path[MAXLEN_PATH + 1];	\/* aa.*.log *\/$/;"	m	struct:zlog_rotater_s
+hash	zc_hashtable.c	/^	zc_hashtable_hash_fn hash;$/;"	m	struct:zc_hashtable_s	file:
+hash_key	zc_hashtable.h	/^	unsigned int hash_key;$/;"	m	struct:zc_hashtable_entry_s
+hdzlog	zlog.c	/^void hdzlog(const char *file, size_t filelen,$/;"	f
+hdzlog_debug	zlog.h	259;"	d
+hdzlog_error	zlog.h	247;"	d
+hdzlog_fatal	zlog.h	244;"	d
+hdzlog_info	zlog.h	256;"	d
+hdzlog_notice	zlog.h	253;"	d
+hdzlog_warn	zlog.h	250;"	d
+hex_buf	event.h	/^	const void *hex_buf;$/;"	m	struct:__anon3
+hex_buf_len	event.h	/^	size_t hex_buf_len;$/;"	m	struct:__anon3
+host_name	event.h	/^	char host_name[256 + 1];$/;"	m	struct:__anon3
+host_name_len	event.h	/^	size_t host_name_len;$/;"	m	struct:__anon3
+hzlog	zlog.c	/^void hzlog(zlog_category_t *category,$/;"	f
+hzlog_debug	zlog.h	218;"	d
+hzlog_error	zlog.h	206;"	d
+hzlog_fatal	zlog.h	203;"	d
+hzlog_info	zlog.h	215;"	d
+hzlog_notice	zlog.h	212;"	d
+hzlog_warn	zlog.h	209;"	d
+index	rotater.c	/^	int index;$/;"	m	struct:__anon5	file:
+init_version	thread.h	/^	int init_version;$/;"	m	struct:__anon1
+int_level	level.h	/^	int int_level;$/;"	m	struct:zlog_level_s
+key	mdc.h	/^	char key[MAXLEN_PATH + 1];$/;"	m	struct:zlog_mdc_kv_s
+key	zc_hashtable.h	/^	void *key;$/;"	m	struct:zc_hashtable_entry_s
+key_del	zc_hashtable.c	/^	zc_hashtable_del_fn key_del;$/;"	m	struct:zc_hashtable_s	file:
+last_pid	event.h	/^	pid_t last_pid;$/;"	m	struct:__anon3
+left_adjust	spec.h	/^	int left_adjust;$/;"	m	struct:zlog_spec_s
+len	event.h	/^	size_t len;$/;"	m	struct:zlog_time_cache_s
+len	record.h	/^	size_t len;$/;"	m	struct:zlog_msg_s
+len	spec.h	/^	int len;$/;"	m	struct:zlog_spec_s
+len	zc_arraylist.h	/^	int len;$/;"	m	struct:__anon4
+len	zlog.h	/^	size_t len;$/;"	m	struct:zlog_msg_s
+level	event.h	/^	int level;$/;"	m	struct:__anon3
+level	rule.h	/^	int level;$/;"	m	struct:zlog_rule_s
+level_bitmap	category.h	/^	unsigned char level_bitmap[32];$/;"	m	struct:zlog_category_s
+level_bitmap	rule.h	/^	unsigned char level_bitmap[32]; \/* for category determine whether ouput or not *\/$/;"	m	struct:zlog_rule_s
+level_bitmap_backup	category.h	/^	unsigned char level_bitmap_backup[32];$/;"	m	struct:zlog_category_s
+levels	conf.h	/^	zc_arraylist_t *levels;$/;"	m	struct:zlog_conf_s
+levels	rule.h	/^	zc_arraylist_t *levels;$/;"	m	struct:zlog_rule_s
+line	event.h	/^	long line;$/;"	m	struct:__anon3
+lock_fd	rotater.h	/^	int lock_fd;$/;"	m	struct:zlog_rotater_s
+lock_file	rotater.h	/^	char *lock_file;$/;"	m	struct:zlog_rotater_s
+lock_mutex	rotater.h	/^	pthread_mutex_t lock_mutex;$/;"	m	struct:zlog_rotater_s
+main	zlog-chk-conf.c	/^int main(int argc, char *argv[])$/;"	f
+max_count	rotater.h	/^	int max_count;$/;"	m	struct:zlog_rotater_s
+max_width	spec.h	/^	size_t max_width;$/;"	m	struct:zlog_spec_s
+mdc	thread.h	/^	zlog_mdc_t *mdc;$/;"	m	struct:__anon1
+mdc_key	spec.h	/^	char mdc_key[MAXLEN_PATH + 1];$/;"	m	struct:zlog_spec_s
+min_width	spec.h	/^	size_t min_width;$/;"	m	struct:zlog_spec_s
+msg_buf	thread.h	/^	zlog_buf_t *msg_buf;$/;"	m	struct:__anon1
+mtime	conf.h	/^	char mtime[20 + 1];$/;"	m	struct:zlog_conf_s
+mv_type	rotater.h	/^	int mv_type;				\/* ROLLING or SEQUENCE *\/$/;"	m	struct:zlog_rotater_s
+name	category.h	/^	char name[MAXLEN_PATH + 1];$/;"	m	struct:zlog_category_s
+name	format.h	/^	char name[MAXLEN_CFG_LINE + 1];	$/;"	m	struct:zlog_format_s
+name	record.h	/^	char name[MAXLEN_PATH + 1];$/;"	m	struct:zlog_record_s
+name_len	category.h	/^	size_t name_len;$/;"	m	struct:zlog_category_s
+nelem	zc_hashtable.c	/^	size_t nelem;$/;"	m	struct:zc_hashtable_s	file:
+next	zc_hashtable.h	/^	struct zc_hashtable_entry_s *next;$/;"	m	struct:zc_hashtable_entry_s	typeref:struct:zc_hashtable_entry_s::zc_hashtable_entry_s
+num_end_len	rotater.h	/^	size_t num_end_len;			\/* 6, offset to glob_path *\/$/;"	m	struct:zlog_rotater_s
+num_start_len	rotater.h	/^	size_t num_start_len;			\/* 3, offset to glob_path *\/$/;"	m	struct:zlog_rotater_s
+num_width	rotater.h	/^	int num_width;				\/* 5 *\/$/;"	m	struct:zlog_rotater_s
+output	record.h	/^	zlog_record_fn output;$/;"	m	struct:zlog_record_s
+output	rule.h	/^	zlog_rule_output_fn output;$/;"	m	struct:zlog_rule_s
+path	record.h	/^	char *path;$/;"	m	struct:zlog_msg_s
+path	rotater.c	/^	char path[MAXLEN_PATH + 1];$/;"	m	struct:__anon5	file:
+path	zlog.h	/^	char *path;$/;"	m	struct:zlog_msg_s
+path_buf	thread.h	/^	zlog_buf_t *path_buf;$/;"	m	struct:__anon1
+pattern	format.h	/^	char pattern[MAXLEN_CFG_LINE + 1];$/;"	m	struct:zlog_format_s
+pattern_specs	format.h	/^	zc_arraylist_t *pattern_specs;$/;"	m	struct:zlog_format_s
+pid	event.h	/^	pid_t pid;$/;"	m	struct:__anon3
+pid_str	event.h	/^	char pid_str[30 + 1];$/;"	m	struct:__anon3
+pid_str_len	event.h	/^	size_t pid_str_len;$/;"	m	struct:__anon3
+pipe_fd	rule.h	/^	int pipe_fd;$/;"	m	struct:zlog_rule_s
+pipe_fp	rule.h	/^	FILE *pipe_fp;$/;"	m	struct:zlog_rule_s
+pre_msg_buf	thread.h	/^	zlog_buf_t *pre_msg_buf;$/;"	m	struct:__anon1
+pre_path_buf	thread.h	/^	zlog_buf_t *pre_path_buf;$/;"	m	struct:__anon1
+prev	zc_hashtable.h	/^	struct zc_hashtable_entry_s *prev;$/;"	m	struct:zc_hashtable_entry_s	typeref:struct:zc_hashtable_entry_s::zc_hashtable_entry_s
+print_fmt	spec.h	/^	char print_fmt[MAXLEN_CFG_LINE + 1];$/;"	m	struct:zlog_spec_s
+record_func	rule.h	/^	zlog_record_fn record_func;$/;"	m	struct:zlog_rule_s
+record_name	rule.h	/^	char record_name[MAXLEN_PATH + 1];$/;"	m	struct:zlog_rule_s
+record_path	rule.h	/^	char record_path[MAXLEN_PATH + 1];$/;"	m	struct:zlog_rule_s
+reload_conf_period	conf.h	/^	size_t reload_conf_period;$/;"	m	struct:zlog_conf_s
+rotate_lock_file	conf.h	/^	char rotate_lock_file[MAXLEN_CFG_LINE + 1];$/;"	m	struct:zlog_conf_s
+rotater	conf.h	/^	zlog_rotater_t *rotater;$/;"	m	struct:zlog_conf_s
+rules	conf.h	/^	zc_arraylist_t *rules;$/;"	m	struct:zlog_conf_s
+sec	event.h	/^	time_t sec;$/;"	m	struct:zlog_time_cache_s
+size	zc_arraylist.h	/^	int size;$/;"	m	struct:__anon4
+size_max	buf.h	/^	size_t size_max;$/;"	m	struct:zlog_buf_s
+size_min	buf.h	/^	size_t size_min;$/;"	m	struct:zlog_buf_s
+size_real	buf.h	/^	size_t size_real;$/;"	m	struct:zlog_buf_s
+start	buf.h	/^	char *start;$/;"	m	struct:zlog_buf_s
+static_dev	rule.h	/^	dev_t static_dev;$/;"	m	struct:zlog_rule_s
+static_fd	rule.h	/^	int static_fd;$/;"	m	struct:zlog_rule_s
+static_ino	rule.h	/^	ino_t static_ino;$/;"	m	struct:zlog_rule_s
+str	event.h	/^	char str[MAXLEN_CFG_LINE + 1];$/;"	m	struct:zlog_time_cache_s
+str	spec.h	/^	char *str;$/;"	m	struct:zlog_spec_s
+str_args	event.h	/^	va_list str_args;$/;"	m	struct:__anon3
+str_format	event.h	/^	const char *str_format;$/;"	m	struct:__anon3
+str_len	level.h	/^	size_t str_len;$/;"	m	struct:zlog_level_s
+str_lowercase	level.h	/^	char str_lowercase[MAXLEN_PATH + 1];$/;"	m	struct:zlog_level_s
+str_uppercase	level.h	/^	char str_uppercase[MAXLEN_PATH + 1];$/;"	m	struct:zlog_level_s
+strict_init	conf.h	/^	int strict_init;$/;"	m	struct:zlog_conf_s
+syslog_facility	rule.h	/^	int syslog_facility;$/;"	m	struct:zlog_rule_s
+syslog_facility_atoi	rule.c	/^static int syslog_facility_atoi(char *facility)$/;"	f	file:
+syslog_level	level.h	/^       	int syslog_level;$/;"	m	struct:zlog_level_s
+syslog_level_atoi	level.c	/^static int syslog_level_atoi(char *str)$/;"	f	file:
+tab	mdc.h	/^	zc_hashtable_t *tab;$/;"	m	struct:zlog_mdc_s
+tab	zc_hashtable.c	/^	zc_hashtable_entry_t **tab;$/;"	m	struct:zc_hashtable_s	file:
+tab_size	zc_hashtable.c	/^	size_t tab_size;$/;"	m	struct:zc_hashtable_s	file:
+tail	buf.h	/^	char *tail;$/;"	m	struct:zlog_buf_s
+tid	event.h	/^	pthread_t tid;$/;"	m	struct:__anon3
+tid_hex_str	event.h	/^	char tid_hex_str[30 + 1];$/;"	m	struct:__anon3
+tid_hex_str_len	event.h	/^	size_t tid_hex_str_len;$/;"	m	struct:__anon3
+tid_str	event.h	/^	char tid_str[30 + 1];$/;"	m	struct:__anon3
+tid_str_len	event.h	/^	size_t tid_str_len;$/;"	m	struct:__anon3
+time_cache_count	conf.h	/^	int time_cache_count;$/;"	m	struct:zlog_conf_s
+time_cache_count	event.h	/^	int time_cache_count;$/;"	m	struct:__anon3
+time_cache_index	spec.h	/^	int time_cache_index;$/;"	m	struct:zlog_spec_s
+time_caches	event.h	/^	zlog_time_cache_t *time_caches;$/;"	m	struct:__anon3
+time_fmt	spec.h	/^	char time_fmt[MAXLEN_CFG_LINE + 1];$/;"	m	struct:zlog_spec_s
+time_local	event.h	/^	struct tm time_local;	$/;"	m	struct:__anon3	typeref:struct:__anon3::tm
+time_local_sec	event.h	/^	time_t time_local_sec;$/;"	m	struct:__anon3
+time_stamp	event.h	/^	struct timeval time_stamp;$/;"	m	struct:__anon3	typeref:struct:__anon3::timeval
+truncate_str	buf.h	/^	char truncate_str[MAXLEN_PATH + 1];$/;"	m	struct:zlog_buf_s
+truncate_str_len	buf.h	/^	size_t truncate_str_len;$/;"	m	struct:zlog_buf_s
+uname_S	makefile	/^uname_S := $(shell sh -c 'uname -s 2>\/dev\/null || echo not')$/;"	m
+value	mdc.h	/^	char value[MAXLEN_PATH + 1];$/;"	m	struct:zlog_mdc_kv_s
+value	zc_hashtable.h	/^	void *value;$/;"	m	struct:zc_hashtable_entry_s
+value_del	zc_hashtable.c	/^	zc_hashtable_del_fn value_del;$/;"	m	struct:zc_hashtable_s	file:
+value_len	mdc.h	/^	size_t value_len;$/;"	m	struct:zlog_mdc_kv_s
+vdzlog	zlog.c	/^void vdzlog(const char *file, size_t filelen,$/;"	f
+vdzlog_debug	zlog.h	239;"	d
+vdzlog_error	zlog.h	227;"	d
+vdzlog_fatal	zlog.h	224;"	d
+vdzlog_info	zlog.h	236;"	d
+vdzlog_notice	zlog.h	233;"	d
+vdzlog_warn	zlog.h	230;"	d
+vzlog	zlog.c	/^void vzlog(zlog_category_t * category,$/;"	f
+vzlog_debug	zlog.h	198;"	d
+vzlog_error	zlog.h	186;"	d
+vzlog_fatal	zlog.h	183;"	d
+vzlog_info	zlog.h	195;"	d
+vzlog_notice	zlog.h	192;"	d
+vzlog_warn	zlog.h	189;"	d
+write_buf	spec.h	/^	zlog_spec_write_fn write_buf;$/;"	m	struct:zlog_spec_s
+zc_arraylist_add	zc_arraylist.c	/^int zc_arraylist_add(zc_arraylist_t * a_list, void *data)$/;"	f
+zc_arraylist_cmp_fn	zc_arraylist.h	/^typedef int (*zc_arraylist_cmp_fn) (void *data1, void *data2);$/;"	t
+zc_arraylist_del	zc_arraylist.c	/^void zc_arraylist_del(zc_arraylist_t * a_list)$/;"	f
+zc_arraylist_del_fn	zc_arraylist.h	/^typedef void (*zc_arraylist_del_fn) (void *data);$/;"	t
+zc_arraylist_expand_inner	zc_arraylist.c	/^static int zc_arraylist_expand_inner(zc_arraylist_t * a_list, int max)$/;"	f	file:
+zc_arraylist_foreach	zc_arraylist.h	38;"	d
+zc_arraylist_get	zc_arraylist.h	35;"	d
+zc_arraylist_insert_inner	zc_arraylist.c	/^static int zc_arraylist_insert_inner(zc_arraylist_t * a_list, int idx,$/;"	f	file:
+zc_arraylist_len	zc_arraylist.h	33;"	d
+zc_arraylist_new	zc_arraylist.c	/^zc_arraylist_t *zc_arraylist_new(zc_arraylist_del_fn del)$/;"	f
+zc_arraylist_set	zc_arraylist.c	/^int zc_arraylist_set(zc_arraylist_t * a_list, int idx, void *data)$/;"	f
+zc_arraylist_sortadd	zc_arraylist.c	/^int zc_arraylist_sortadd(zc_arraylist_t * a_list, zc_arraylist_cmp_fn cmp,$/;"	f
+zc_arraylist_t	zc_arraylist.h	/^} zc_arraylist_t;$/;"	t	typeref:struct:__anon4
+zc_assert	zc_profile.h	15;"	d
+zc_debug	zc_profile.h	29;"	d
+zc_debug	zc_profile.h	38;"	d
+zc_error	zc_profile.h	33;"	d
+zc_error	zc_profile.h	42;"	d
+zc_hashtable_begin	zc_hashtable.c	/^zc_hashtable_entry_t *zc_hashtable_begin(zc_hashtable_t * a_table)$/;"	f
+zc_hashtable_clean	zc_hashtable.c	/^void zc_hashtable_clean(zc_hashtable_t * a_table)$/;"	f
+zc_hashtable_del	zc_hashtable.c	/^void zc_hashtable_del(zc_hashtable_t * a_table)$/;"	f
+zc_hashtable_del_fn	zc_hashtable.h	/^typedef void (*zc_hashtable_del_fn) (void *kv);$/;"	t
+zc_hashtable_entry_s	zc_hashtable.h	/^typedef struct zc_hashtable_entry_s {$/;"	s
+zc_hashtable_entry_t	zc_hashtable.h	/^} zc_hashtable_entry_t;$/;"	t	typeref:struct:zc_hashtable_entry_s
+zc_hashtable_equal_fn	zc_hashtable.h	/^typedef int (*zc_hashtable_equal_fn) (const void *key1, const void *key2);$/;"	t
+zc_hashtable_foreach	zc_hashtable.h	43;"	d
+zc_hashtable_get	zc_hashtable.c	/^void *zc_hashtable_get(zc_hashtable_t * a_table, const void *a_key)$/;"	f
+zc_hashtable_get_entry	zc_hashtable.c	/^zc_hashtable_entry_t *zc_hashtable_get_entry(zc_hashtable_t * a_table, const void *a_key)$/;"	f
+zc_hashtable_hash_fn	zc_hashtable.h	/^typedef unsigned int (*zc_hashtable_hash_fn) (const void *key);$/;"	t
+zc_hashtable_new	zc_hashtable.c	/^zc_hashtable_t *zc_hashtable_new(size_t a_size,$/;"	f
+zc_hashtable_next	zc_hashtable.c	/^zc_hashtable_entry_t *zc_hashtable_next(zc_hashtable_t * a_table, zc_hashtable_entry_t * a_entry)$/;"	f
+zc_hashtable_put	zc_hashtable.c	/^int zc_hashtable_put(zc_hashtable_t * a_table, void *a_key, void *a_value)$/;"	f
+zc_hashtable_rehash	zc_hashtable.c	/^static int zc_hashtable_rehash(zc_hashtable_t * a_table)$/;"	f	file:
+zc_hashtable_remove	zc_hashtable.c	/^void zc_hashtable_remove(zc_hashtable_t * a_table, const void *a_key)$/;"	f
+zc_hashtable_s	zc_hashtable.c	/^struct zc_hashtable_s {$/;"	s	file:
+zc_hashtable_str_equal	zc_hashtable.c	/^int zc_hashtable_str_equal(const void *key1, const void *key2)$/;"	f
+zc_hashtable_str_hash	zc_hashtable.c	/^unsigned int zc_hashtable_str_hash(const void *str)$/;"	f
+zc_hashtable_t	zc_hashtable.h	/^typedef struct zc_hashtable_s zc_hashtable_t;$/;"	t	typeref:struct:zc_hashtable_s
+zc_max	zc_util.h	14;"	d
+zc_min	zc_util.h	15;"	d
+zc_parse_byte_size	zc_util.c	/^size_t zc_parse_byte_size(char *astring)$/;"	f
+zc_profile	zc_profile.h	35;"	d
+zc_profile	zc_profile.h	44;"	d
+zc_profile_flag	zc_profile.h	/^enum zc_profile_flag {$/;"	g
+zc_profile_inner	zc_profile.c	/^int zc_profile_inner(int flag, const char *file, const long line, const char *fmt, ...)$/;"	f
+zc_str_replace_env	zc_util.c	/^int zc_str_replace_env(char *str, size_t str_size)$/;"	f
+zc_time	zc_profile.c	/^static void zc_time(char *time_str, size_t time_str_size)$/;"	f	file:
+zc_warn	zc_profile.h	31;"	d
+zc_warn	zc_profile.h	40;"	d
+zlog	zlog.c	/^void zlog(zlog_category_t * category,$/;"	f
+zlog_buf_adjust_append	buf.c	/^int zlog_buf_adjust_append(zlog_buf_t * a_buf, const char *str, size_t str_len,$/;"	f
+zlog_buf_append	buf.c	/^int zlog_buf_append(zlog_buf_t * a_buf, const char *str, size_t str_len)$/;"	f
+zlog_buf_del	buf.c	/^void zlog_buf_del(zlog_buf_t * a_buf)$/;"	f
+zlog_buf_len	buf.h	52;"	d
+zlog_buf_new	buf.c	/^zlog_buf_t *zlog_buf_new(size_t buf_size_min, size_t buf_size_max, const char *truncate_str)$/;"	f
+zlog_buf_printf_dec32	buf.c	/^int zlog_buf_printf_dec32(zlog_buf_t * a_buf, uint32_t ui32, int width)$/;"	f
+zlog_buf_printf_dec64	buf.c	/^int zlog_buf_printf_dec64(zlog_buf_t * a_buf, uint64_t ui64, int width)$/;"	f
+zlog_buf_printf_hex	buf.c	/^int zlog_buf_printf_hex(zlog_buf_t * a_buf, uint32_t ui32, int width)$/;"	f
+zlog_buf_profile	buf.c	/^void zlog_buf_profile(zlog_buf_t * a_buf, int flag)$/;"	f
+zlog_buf_resize	buf.c	/^static int zlog_buf_resize(zlog_buf_t * a_buf, size_t increment)$/;"	f	file:
+zlog_buf_restart	buf.h	48;"	d
+zlog_buf_s	buf.h	/^typedef struct zlog_buf_s {$/;"	s
+zlog_buf_seal	buf.h	54;"	d
+zlog_buf_str	buf.h	53;"	d
+zlog_buf_t	buf.h	/^} zlog_buf_t;$/;"	t	typeref:struct:zlog_buf_s
+zlog_buf_truncate	buf.c	/^static void zlog_buf_truncate(zlog_buf_t * a_buf)$/;"	f	file:
+zlog_buf_vprintf	buf.c	/^int zlog_buf_vprintf(zlog_buf_t * a_buf, const char *format, va_list args)$/;"	f
+zlog_category_commit_rules	category.c	/^void zlog_category_commit_rules(zlog_category_t * a_category)$/;"	f
+zlog_category_del	category.c	/^void zlog_category_del(zlog_category_t * a_category)$/;"	f
+zlog_category_needless_level	category.h	34;"	d
+zlog_category_new	category.c	/^zlog_category_t *zlog_category_new(const char *name, zc_arraylist_t * rules)$/;"	f
+zlog_category_obtain_rules	category.c	/^static int zlog_category_obtain_rules(zlog_category_t * a_category, zc_arraylist_t * rules)$/;"	f	file:
+zlog_category_output	category.c	/^int zlog_category_output(zlog_category_t * a_category, zlog_thread_t * a_thread)$/;"	f
+zlog_category_profile	category.c	/^void zlog_category_profile(zlog_category_t *a_category, int flag)$/;"	f
+zlog_category_rollback_rules	category.c	/^void zlog_category_rollback_rules(zlog_category_t * a_category)$/;"	f
+zlog_category_s	category.h	/^typedef struct zlog_category_s {$/;"	s
+zlog_category_t	category.h	/^} zlog_category_t;$/;"	t	typeref:struct:zlog_category_s
+zlog_category_t	zlog.h	/^typedef struct zlog_category_s zlog_category_t;$/;"	t	typeref:struct:zlog_category_s
+zlog_category_table_commit_rules	category_table.c	/^void zlog_category_table_commit_rules(zc_hashtable_t * categories)$/;"	f
+zlog_category_table_del	category_table.c	/^void zlog_category_table_del(zc_hashtable_t * categories)$/;"	f
+zlog_category_table_fetch_category	category_table.c	/^zlog_category_t *zlog_category_table_fetch_category(zc_hashtable_t * categories,$/;"	f
+zlog_category_table_new	category_table.c	/^zc_hashtable_t *zlog_category_table_new(void)$/;"	f
+zlog_category_table_profile	category_table.c	/^void zlog_category_table_profile(zc_hashtable_t * categories, int flag)$/;"	f
+zlog_category_table_rollback_rules	category_table.c	/^void zlog_category_table_rollback_rules(zc_hashtable_t * categories)$/;"	f
+zlog_category_table_update_rules	category_table.c	/^int zlog_category_table_update_rules(zc_hashtable_t * categories, zc_arraylist_t * new_rules)$/;"	f
+zlog_category_update_rules	category.c	/^int zlog_category_update_rules(zlog_category_t * a_category, zc_arraylist_t * new_rules)$/;"	f
+zlog_cateogry_overlap_bitmap	category.c	/^static void zlog_cateogry_overlap_bitmap(zlog_category_t * a_category, zlog_rule_t *a_rule)$/;"	f	file:
+zlog_clean_mdc	zlog.c	/^void zlog_clean_mdc(void)$/;"	f
+zlog_clean_rest_thread	zlog.c	/^static void zlog_clean_rest_thread(void)$/;"	f	file:
+zlog_conf_build_with_file	conf.c	/^static int zlog_conf_build_with_file(zlog_conf_t * a_conf)$/;"	f	file:
+zlog_conf_build_without_file	conf.c	/^static int zlog_conf_build_without_file(zlog_conf_t * a_conf)$/;"	f	file:
+zlog_conf_del	conf.c	/^void zlog_conf_del(zlog_conf_t * a_conf)$/;"	f
+zlog_conf_new	conf.c	/^zlog_conf_t *zlog_conf_new(const char *confpath)$/;"	f
+zlog_conf_parse_line	conf.c	/^static int zlog_conf_parse_line(zlog_conf_t * a_conf, char *line, int *section)$/;"	f	file:
+zlog_conf_profile	conf.c	/^void zlog_conf_profile(zlog_conf_t * a_conf, int flag)$/;"	f
+zlog_conf_s	conf.h	/^typedef struct zlog_conf_s {$/;"	s
+zlog_conf_t	conf.h	/^} zlog_conf_t;$/;"	t	typeref:struct:zlog_conf_s
+zlog_debug	zlog.h	118;"	d
+zlog_debug	zlog.h	157;"	d
+zlog_default_category	zlog.c	/^static zlog_category_t *zlog_default_category;$/;"	v	file:
+zlog_env_categories	zlog.c	/^static zc_hashtable_t *zlog_env_categories;$/;"	v	file:
+zlog_env_conf	zlog.c	/^zlog_conf_t *zlog_env_conf;$/;"	v
+zlog_env_init_version	zlog.c	/^static int zlog_env_init_version = 0;$/;"	v	file:
+zlog_env_is_init	zlog.c	/^static int zlog_env_is_init = 0;$/;"	v	file:
+zlog_env_lock	zlog.c	/^static pthread_rwlock_t zlog_env_lock = PTHREAD_RWLOCK_INITIALIZER;$/;"	v	file:
+zlog_env_records	zlog.c	/^static zc_hashtable_t *zlog_env_records;$/;"	v	file:
+zlog_env_reload_conf_count	zlog.c	/^static size_t zlog_env_reload_conf_count;$/;"	v	file:
+zlog_error	zlog.h	106;"	d
+zlog_error	zlog.h	145;"	d
+zlog_event_cmd	event.h	/^} zlog_event_cmd;$/;"	t	typeref:enum:__anon2
+zlog_event_del	event.c	/^void zlog_event_del(zlog_event_t * a_event)$/;"	f
+zlog_event_new	event.c	/^zlog_event_t *zlog_event_new(int time_cache_count)$/;"	f
+zlog_event_profile	event.c	/^void zlog_event_profile(zlog_event_t * a_event, int flag)$/;"	f
+zlog_event_set_fmt	event.c	/^void zlog_event_set_fmt(zlog_event_t * a_event,$/;"	f
+zlog_event_set_hex	event.c	/^void zlog_event_set_hex(zlog_event_t * a_event,$/;"	f
+zlog_event_t	event.h	/^} zlog_event_t;$/;"	t	typeref:struct:__anon3
+zlog_fatal	zlog.h	103;"	d
+zlog_fatal	zlog.h	142;"	d
+zlog_fetch_thread	zlog.c	417;"	d	file:
+zlog_file_check_new	rotater.c	/^static zlog_file_t *zlog_file_check_new(zlog_rotater_t * a_rotater, const char *path)$/;"	f	file:
+zlog_file_cmp	rotater.c	/^static int zlog_file_cmp(zlog_file_t * a_file_1, zlog_file_t * a_file_2)$/;"	f	file:
+zlog_file_del	rotater.c	/^static void zlog_file_del(zlog_file_t * a_file)$/;"	f	file:
+zlog_file_t	rotater.c	/^} zlog_file_t;$/;"	t	typeref:struct:__anon5	file:
+zlog_fini	zlog.c	/^void zlog_fini(void)$/;"	f
+zlog_fini_inner	zlog.c	/^static void zlog_fini_inner(void)$/;"	f	file:
+zlog_format_del	format.c	/^void zlog_format_del(zlog_format_t * a_format)$/;"	f
+zlog_format_gen_msg	format.c	/^int zlog_format_gen_msg(zlog_format_t * a_format, zlog_thread_t * a_thread)$/;"	f
+zlog_format_has_name	format.h	29;"	d
+zlog_format_new	format.c	/^zlog_format_t *zlog_format_new(char *line, int * time_cache_count)$/;"	f
+zlog_format_profile	format.c	/^void zlog_format_profile(zlog_format_t * a_format, int flag)$/;"	f
+zlog_format_s	format.h	/^struct zlog_format_s {$/;"	s
+zlog_format_t	format.h	/^typedef struct zlog_format_s zlog_format_t;$/;"	t	typeref:struct:zlog_format_s
+zlog_fstat	zc_xplatform.h	45;"	d
+zlog_fstat	zc_xplatform.h	48;"	d
+zlog_fsync	zc_xplatform.h	54;"	d
+zlog_fsync	zc_xplatform.h	56;"	d
+zlog_get_category	zlog.c	/^zlog_category_t *zlog_get_category(const char *cname)$/;"	f
+zlog_get_mdc	zlog.c	/^char *zlog_get_mdc(char *key)$/;"	f
+zlog_info	zlog.h	115;"	d
+zlog_info	zlog.h	154;"	d
+zlog_init	zlog.c	/^int zlog_init(const char *confpath)$/;"	f
+zlog_init_inner	zlog.c	/^static int zlog_init_inner(const char *confpath)$/;"	f	file:
+zlog_level	zlog.h	/^} zlog_level; $/;"	t	typeref:enum:__anon6
+zlog_level_del	level.c	/^void zlog_level_del(zlog_level_t *a_level)$/;"	f
+zlog_level_list_atoi	level_list.c	/^int zlog_level_list_atoi(zc_arraylist_t *levels, char *str)$/;"	f
+zlog_level_list_del	level_list.c	/^void zlog_level_list_del(zc_arraylist_t *levels)$/;"	f
+zlog_level_list_get	level_list.c	/^zlog_level_t *zlog_level_list_get(zc_arraylist_t *levels, int l)$/;"	f
+zlog_level_list_new	level_list.c	/^zc_arraylist_t *zlog_level_list_new(void)$/;"	f
+zlog_level_list_profile	level_list.c	/^void zlog_level_list_profile(zc_arraylist_t *levels, int flag)$/;"	f
+zlog_level_list_set	level_list.c	/^int zlog_level_list_set(zc_arraylist_t *levels, char *line)$/;"	f
+zlog_level_list_set_default	level_list.c	/^static int zlog_level_list_set_default(zc_arraylist_t *levels)$/;"	f	file:
+zlog_level_new	level.c	/^zlog_level_t *zlog_level_new(char *line)$/;"	f
+zlog_level_profile	level.c	/^void zlog_level_profile(zlog_level_t *a_level, int flag)$/;"	f
+zlog_level_s	level.h	/^typedef struct zlog_level_s {$/;"	s
+zlog_level_t	level.h	/^} zlog_level_t;$/;"	t	typeref:struct:zlog_level_s
+zlog_mdc_clean	mdc.c	/^void zlog_mdc_clean(zlog_mdc_t * a_mdc)$/;"	f
+zlog_mdc_del	mdc.c	/^void zlog_mdc_del(zlog_mdc_t * a_mdc)$/;"	f
+zlog_mdc_get	mdc.c	/^char *zlog_mdc_get(zlog_mdc_t * a_mdc, const char *key)$/;"	f
+zlog_mdc_get_kv	mdc.c	/^zlog_mdc_kv_t *zlog_mdc_get_kv(zlog_mdc_t * a_mdc, const char *key)$/;"	f
+zlog_mdc_kv_del	mdc.c	/^static void zlog_mdc_kv_del(zlog_mdc_kv_t * a_mdc_kv)$/;"	f	file:
+zlog_mdc_kv_new	mdc.c	/^static zlog_mdc_kv_t *zlog_mdc_kv_new(const char *key, const char *value)$/;"	f	file:
+zlog_mdc_kv_s	mdc.h	/^typedef struct zlog_mdc_kv_s {$/;"	s
+zlog_mdc_kv_t	mdc.h	/^} zlog_mdc_kv_t;$/;"	t	typeref:struct:zlog_mdc_kv_s
+zlog_mdc_new	mdc.c	/^zlog_mdc_t *zlog_mdc_new(void)$/;"	f
+zlog_mdc_profile	mdc.c	/^void zlog_mdc_profile(zlog_mdc_t *a_mdc, int flag)$/;"	f
+zlog_mdc_put	mdc.c	/^int zlog_mdc_put(zlog_mdc_t * a_mdc, const char *key, const char *value)$/;"	f
+zlog_mdc_remove	mdc.c	/^void zlog_mdc_remove(zlog_mdc_t * a_mdc, const char *key)$/;"	f
+zlog_mdc_s	mdc.h	/^struct zlog_mdc_s {$/;"	s
+zlog_mdc_t	mdc.h	/^typedef struct zlog_mdc_s zlog_mdc_t;$/;"	t	typeref:struct:zlog_mdc_s
+zlog_msg_s	record.h	/^typedef struct zlog_msg_s {$/;"	s
+zlog_msg_s	zlog.h	/^typedef struct zlog_msg_s {$/;"	s
+zlog_msg_t	record.h	/^} zlog_msg_t; \/* 3 of this first, see need thread or not later *\/$/;"	t	typeref:struct:zlog_msg_s
+zlog_msg_t	zlog.h	/^} zlog_msg_t;$/;"	t	typeref:struct:zlog_msg_s
+zlog_notice	zlog.h	112;"	d
+zlog_notice	zlog.h	151;"	d
+zlog_profile	zlog.c	/^void zlog_profile(void)$/;"	f
+zlog_put_mdc	zlog.c	/^int zlog_put_mdc(const char *key, const char *value)$/;"	f
+zlog_record_del	record.c	/^void zlog_record_del(zlog_record_t *a_record)$/;"	f
+zlog_record_fn	record.h	/^typedef int (*zlog_record_fn)(zlog_msg_t * msg);$/;"	t
+zlog_record_fn	zlog.h	/^typedef int (*zlog_record_fn)(zlog_msg_t *msg);$/;"	t
+zlog_record_new	record.c	/^zlog_record_t *zlog_record_new(const char *name, zlog_record_fn output)$/;"	f
+zlog_record_profile	record.c	/^void zlog_record_profile(zlog_record_t *a_record, int flag)$/;"	f
+zlog_record_s	record.h	/^typedef struct zlog_record_s {$/;"	s
+zlog_record_t	record.h	/^} zlog_record_t;$/;"	t	typeref:struct:zlog_record_s
+zlog_record_table_del	record_table.c	/^void zlog_record_table_del(zc_hashtable_t * records)$/;"	f
+zlog_record_table_new	record_table.c	/^zc_hashtable_t *zlog_record_table_new(void)$/;"	f
+zlog_record_table_profile	record_table.c	/^void zlog_record_table_profile(zc_hashtable_t * records, int flag)$/;"	f
+zlog_reload	zlog.c	/^int zlog_reload(const char *confpath)$/;"	f
+zlog_remove_mdc	zlog.c	/^void zlog_remove_mdc(char *key)$/;"	f
+zlog_rotater_add_archive_files	rotater.c	/^static int zlog_rotater_add_archive_files(zlog_rotater_t * a_rotater)$/;"	f	file:
+zlog_rotater_clean	rotater.c	/^static void zlog_rotater_clean(zlog_rotater_t *a_rotater)$/;"	f	file:
+zlog_rotater_del	rotater.c	/^void zlog_rotater_del(zlog_rotater_t *a_rotater)$/;"	f
+zlog_rotater_lsmv	rotater.c	/^static int zlog_rotater_lsmv(zlog_rotater_t *a_rotater, $/;"	f	file:
+zlog_rotater_new	rotater.c	/^zlog_rotater_t *zlog_rotater_new(char *lock_file)$/;"	f
+zlog_rotater_parse_archive_path	rotater.c	/^static int zlog_rotater_parse_archive_path(zlog_rotater_t * a_rotater)$/;"	f	file:
+zlog_rotater_profile	rotater.c	/^void zlog_rotater_profile(zlog_rotater_t * a_rotater, int flag)$/;"	f
+zlog_rotater_roll_files	rotater.c	/^static int zlog_rotater_roll_files(zlog_rotater_t * a_rotater)$/;"	f	file:
+zlog_rotater_rotate	rotater.c	/^int zlog_rotater_rotate(zlog_rotater_t *a_rotater,$/;"	f
+zlog_rotater_s	rotater.h	/^typedef struct zlog_rotater_s {$/;"	s
+zlog_rotater_seq_files	rotater.c	/^static int zlog_rotater_seq_files(zlog_rotater_t * a_rotater)$/;"	f	file:
+zlog_rotater_t	rotater.h	/^} zlog_rotater_t;$/;"	t	typeref:struct:zlog_rotater_s
+zlog_rotater_trylock	rotater.c	/^static int zlog_rotater_trylock(zlog_rotater_t *a_rotater)$/;"	f	file:
+zlog_rotater_unlock	rotater.c	/^static int zlog_rotater_unlock(zlog_rotater_t *a_rotater)$/;"	f	file:
+zlog_rule_del	rule.c	/^void zlog_rule_del(zlog_rule_t * a_rule)$/;"	f
+zlog_rule_gen_archive_path	rule.c	/^static char * zlog_rule_gen_archive_path(zlog_rule_t *a_rule, zlog_thread_t *a_thread)$/;"	f	file:
+zlog_rule_gen_path	rule.c	231;"	d	file:
+zlog_rule_is_wastebin	rule.c	/^int zlog_rule_is_wastebin(zlog_rule_t * a_rule)$/;"	f
+zlog_rule_match_category	rule.c	/^int zlog_rule_match_category(zlog_rule_t * a_rule, char *category)$/;"	f
+zlog_rule_new	rule.c	/^zlog_rule_t *zlog_rule_new(char *line,$/;"	f
+zlog_rule_output	rule.c	/^int zlog_rule_output(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f
+zlog_rule_output_dynamic_file_rotate	rule.c	/^static int zlog_rule_output_dynamic_file_rotate(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_rule_output_dynamic_file_single	rule.c	/^static int zlog_rule_output_dynamic_file_single(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_rule_output_dynamic_record	rule.c	/^static int zlog_rule_output_dynamic_record(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_rule_output_fn	rule.h	/^typedef int (*zlog_rule_output_fn) (zlog_rule_t * a_rule, zlog_thread_t * a_thread);$/;"	t
+zlog_rule_output_pipe	rule.c	/^static int zlog_rule_output_pipe(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_rule_output_static_file_rotate	rule.c	/^static int zlog_rule_output_static_file_rotate(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_rule_output_static_file_single	rule.c	/^static int zlog_rule_output_static_file_single(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_rule_output_static_record	rule.c	/^static int zlog_rule_output_static_record(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_rule_output_stderr	rule.c	/^static int zlog_rule_output_stderr(zlog_rule_t * a_rule,$/;"	f	file:
+zlog_rule_output_stdout	rule.c	/^static int zlog_rule_output_stdout(zlog_rule_t * a_rule,$/;"	f	file:
+zlog_rule_output_syslog	rule.c	/^static int zlog_rule_output_syslog(zlog_rule_t * a_rule, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_rule_parse_path	rule.c	/^static int zlog_rule_parse_path(char *path_start, \/* start with a " *\/$/;"	f	file:
+zlog_rule_profile	rule.c	/^void zlog_rule_profile(zlog_rule_t * a_rule, int flag)$/;"	f
+zlog_rule_s	rule.h	/^struct zlog_rule_s {$/;"	s
+zlog_rule_set_record	rule.c	/^int zlog_rule_set_record(zlog_rule_t * a_rule, zc_hashtable_t *records)$/;"	f
+zlog_rule_t	rule.h	/^typedef struct zlog_rule_s zlog_rule_t;$/;"	t	typeref:struct:zlog_rule_s
+zlog_set_record	zlog.c	/^int zlog_set_record(const char *rname, zlog_record_fn record_output)$/;"	f
+zlog_spec_del	spec.c	/^void zlog_spec_del(zlog_spec_t * a_spec)$/;"	f
+zlog_spec_gen_archive_path	spec.h	56;"	d
+zlog_spec_gen_archive_path_direct	spec.c	/^static int zlog_spec_gen_archive_path_direct(zlog_spec_t * a_spec, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_spec_gen_archive_path_reformat	spec.c	/^static int zlog_spec_gen_archive_path_reformat(zlog_spec_t * a_spec, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_spec_gen_fn	spec.h	/^typedef int (*zlog_spec_gen_fn) (zlog_spec_t * a_spec,$/;"	t
+zlog_spec_gen_msg	spec.h	50;"	d
+zlog_spec_gen_msg_direct	spec.c	/^static int zlog_spec_gen_msg_direct(zlog_spec_t * a_spec, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_spec_gen_msg_reformat	spec.c	/^static int zlog_spec_gen_msg_reformat(zlog_spec_t * a_spec, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_spec_gen_path	spec.h	53;"	d
+zlog_spec_gen_path_direct	spec.c	/^static int zlog_spec_gen_path_direct(zlog_spec_t * a_spec, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_spec_gen_path_reformat	spec.c	/^static int zlog_spec_gen_path_reformat(zlog_spec_t * a_spec, zlog_thread_t * a_thread)$/;"	f	file:
+zlog_spec_new	spec.c	/^zlog_spec_t *zlog_spec_new(char *pattern_start, char **pattern_next, int *time_cache_count)$/;"	f
+zlog_spec_parse_print_fmt	spec.c	/^static int zlog_spec_parse_print_fmt(zlog_spec_t * a_spec)$/;"	f	file:
+zlog_spec_profile	spec.c	/^void zlog_spec_profile(zlog_spec_t * a_spec, int flag)$/;"	f
+zlog_spec_s	spec.h	/^struct zlog_spec_s {$/;"	s
+zlog_spec_t	spec.h	/^typedef struct zlog_spec_s zlog_spec_t;$/;"	t	typeref:struct:zlog_spec_s
+zlog_spec_write_category	spec.c	/^static int zlog_spec_write_category(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_fn	spec.h	/^typedef int (*zlog_spec_write_fn) (zlog_spec_t * a_spec,$/;"	t
+zlog_spec_write_hostname	spec.c	/^static int zlog_spec_write_hostname(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_level_lowercase	spec.c	/^static int zlog_spec_write_level_lowercase(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_level_uppercase	spec.c	/^static int zlog_spec_write_level_uppercase(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_mdc	spec.c	/^static int zlog_spec_write_mdc(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_ms	spec.c	/^static int zlog_spec_write_ms(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_newline	spec.c	/^static int zlog_spec_write_newline(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_percent	spec.c	/^static int zlog_spec_write_percent(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_pid	spec.c	/^static int zlog_spec_write_pid(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_srcfile	spec.c	/^static int zlog_spec_write_srcfile(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_srcfile_neat	spec.c	/^static int zlog_spec_write_srcfile_neat(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_srcfunc	spec.c	/^static int zlog_spec_write_srcfunc(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_srcline	spec.c	/^static int zlog_spec_write_srcline(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_str	spec.c	/^static int zlog_spec_write_str(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_tid_hex	spec.c	/^static int zlog_spec_write_tid_hex(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_tid_long	spec.c	/^static int zlog_spec_write_tid_long(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_time	spec.c	/^static int zlog_spec_write_time(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_us	spec.c	/^static int zlog_spec_write_us(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_spec_write_usrmsg	spec.c	/^static int zlog_spec_write_usrmsg(zlog_spec_t * a_spec, zlog_thread_t * a_thread, zlog_buf_t * a_buf)$/;"	f	file:
+zlog_stat	zc_xplatform.h	46;"	d
+zlog_stat	zc_xplatform.h	49;"	d
+zlog_thread_del	thread.c	/^void zlog_thread_del(zlog_thread_t * a_thread)$/;"	f
+zlog_thread_key	zlog.c	/^static pthread_key_t zlog_thread_key;$/;"	v	file:
+zlog_thread_new	thread.c	/^zlog_thread_t *zlog_thread_new(int init_version, size_t buf_size_min, size_t buf_size_max, int time_cache_count)$/;"	f
+zlog_thread_profile	thread.c	/^void zlog_thread_profile(zlog_thread_t * a_thread, int flag)$/;"	f
+zlog_thread_rebuild_event	thread.c	/^int zlog_thread_rebuild_event(zlog_thread_t * a_thread, int time_cache_count)$/;"	f
+zlog_thread_rebuild_msg_buf	thread.c	/^int zlog_thread_rebuild_msg_buf(zlog_thread_t * a_thread, size_t buf_size_min, size_t buf_size_max)$/;"	f
+zlog_thread_t	thread.h	/^} zlog_thread_t;$/;"	t	typeref:struct:__anon1
+zlog_time_cache_s	event.h	/^typedef struct zlog_time_cache_s {$/;"	s
+zlog_time_cache_t	event.h	/^} zlog_time_cache_t;$/;"	t	typeref:struct:zlog_time_cache_s
+zlog_warn	zlog.h	109;"	d
+zlog_warn	zlog.h	148;"	d
